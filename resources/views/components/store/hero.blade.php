@@ -27,7 +27,6 @@
     </div>
 
     <div class="promo-hero__visual" aria-label="{{ $hero['media_label'] }}">
-        <div class="promo-hero__circle"></div>
         <div class="promo-hero__product-card">
             <img src="{{ asset($hero['media_src']) }}" alt="{{ $hero['media_alt'] }}" loading="eager">
         </div>
