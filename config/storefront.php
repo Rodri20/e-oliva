@@ -34,4 +34,32 @@ return [
         'legal' => 'Los descuentos y precios se mostraran segun cada campana.',
         'media_label' => 'Producto o campana principal',
     ],
+
+    'offers' => [
+        'title' => 'Las mejores ofertas de E-OLIVA',
+        'view_all_label' => 'Ver todos',
+        'view_all_href' => '/tienda',
+        'items' => [
+            ['name' => 'Oliva Clasico', 'price' => 'S/ -.-', 'note' => 'Precio y ahorro por confirmar'],
+            ['name' => 'Reserva Especial', 'price' => 'S/ -.-', 'note' => 'Precio y ahorro por confirmar'],
+            ['name' => 'Extra Virgen', 'price' => 'S/ -.-', 'note' => 'Precio y ahorro por confirmar'],
+            ['name' => 'Pack Familiar', 'price' => 'S/ -.-', 'note' => 'Precio y ahorro por confirmar'],
+            ['name' => 'Seleccion Gourmet', 'price' => 'S/ -.-', 'note' => 'Precio y ahorro por confirmar'],
+        ],
+    ],
+
+    'shop_categories' => [
+        'title' => 'Compra por categoria',
+        'view_all_label' => 'Ver todos',
+        'view_all_href' => '/tienda',
+        'items' => [
+            ['name' => 'Extra virgen', 'href' => '/tienda'],
+            ['name' => 'Botellas', 'href' => '/tienda'],
+            ['name' => 'Packs', 'href' => '/tienda'],
+            ['name' => 'Regalos', 'href' => '/tienda'],
+            ['name' => 'Cocina', 'href' => '/tienda'],
+            ['name' => 'Gourmet', 'href' => '/tienda'],
+            ['name' => 'Ediciones', 'href' => '/tienda'],
+        ],
+    ],
 ];
