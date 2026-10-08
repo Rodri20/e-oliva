@@ -3,40 +3,9 @@
 @section('title', 'Oliva | Aceites, cuidado y regalos naturales')
 
 @section('content')
-    <section class="home-hero">
-        <div class="container home-hero-grid">
-            <div class="home-hero-copy">
-                <p class="eyebrow">Cosecha natural para todos los dias</p>
-                <h1>Productos de oliva para cocinar, cuidar y regalar mejor.</h1>
-                <p>Una experiencia ecommerce pensada para descubrir productos naturales, comparar opciones y comprar con confianza desde cualquier dispositivo.</p>
-                <div class="hero-actions">
-                    <a class="button" href="{{ route('products.index') }}">Comprar ahora</a>
-                    <a class="button secondary" href="#colecciones">Ver colecciones</a>
-                </div>
-                <dl class="hero-metrics" aria-label="Beneficios principales">
-                    <div>
-                        <dt>24h</dt>
-                        <dd>preparacion estimada</dd>
-                    </div>
-                    <div>
-                        <dt>S/150</dt>
-                        <dd>envio gratis Lima</dd>
-                    </div>
-                    <div>
-                        <dt>100%</dt>
-                        <dd>seleccion curada</dd>
-                    </div>
-                </dl>
-            </div>
-            <div class="home-hero-media" aria-label="Productos Oliva destacados">
-                <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=1000&q=80" alt="Aceite de oliva servido en mesa natural">
-                <div class="hero-note">
-                    <strong>Seleccion premium</strong>
-                    <span>Aceites, kits y regalos listos para despacho.</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container">
+        <x-store.hero />
+    </div>
 
     <section class="section home-strip" aria-label="Ventajas de compra">
         <div class="container home-strip-grid">
