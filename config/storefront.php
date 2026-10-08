@@ -3,6 +3,8 @@
 return [
     'header' => [
         'welcome' => 'Bienvenido a E-OLIVA - Aceite de oliva para disfrutar',
+        'logo_src' => 'images/storefront/e-oliva-logo.png',
+        'logo_alt' => 'E-OLIVA',
         'utility_links' => [
             ['label' => 'Envios segun cobertura', 'href' => '#'],
             ['label' => 'Sigue tu pedido', 'href' => '#'],

@@ -160,19 +160,15 @@ textarea {
 
 .store-header__brand {
     align-items: center;
-    color: #0a512f;
     display: inline-flex;
-    font-size: 28px;
-    font-weight: 800;
-    gap: 8px;
-    line-height: 1;
+    height: 46px;
 }
 
-.store-header__brand-mark {
-    border-left: 4px solid currentColor;
-    display: inline-flex;
-    line-height: .82;
-    padding-left: 8px;
+.store-header__brand img {
+    display: block;
+    height: 42px;
+    object-fit: contain;
+    width: auto;
 }
 
 .store-header__search {
@@ -1294,8 +1290,8 @@ footer {
         gap: 14px;
     }
 
-    .store-header__brand {
-        font-size: 24px;
+    .store-header__brand img {
+        height: 34px;
     }
 
     .store-header__actions {

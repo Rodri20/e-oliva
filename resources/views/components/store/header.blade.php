@@ -22,8 +22,7 @@
                 <span></span>
             </button>
             <a class="store-header__brand" href="{{ route('home') }}" aria-label="E-OLIVA inicio">
-                <span class="store-header__brand-mark">E</span>
-                <span>E-OLIVA</span>
+                <img src="{{ asset($header['logo_src']) }}" alt="{{ $header['logo_alt'] }}" width="190" height="48">
             </a>
         </div>
 
