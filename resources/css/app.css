@@ -244,6 +244,12 @@ textarea {
     white-space: nowrap;
 }
 
+.store-header__category-icon {
+    color: currentColor;
+    flex: 0 0 auto;
+    margin-top: 1px;
+}
+
 .store-header__category:hover {
     background: #e5ece1;
     border-color: #d9e3d4;

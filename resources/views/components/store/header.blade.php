@@ -47,7 +47,7 @@
                 href="{{ $category['href'] }}"
             >
                 {{ $category['label'] }}
-                <span aria-hidden="true">&#8964;</span>
+                <x-icons.down-arrow class="store-header__category-icon" :size="14" />
             </a>
         @endforeach
     </div>
