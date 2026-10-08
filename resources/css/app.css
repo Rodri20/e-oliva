@@ -353,12 +353,26 @@ textarea {
 }
 
 .promo-hero__circle {
+    animation: hero-circle-breathe 7s ease-in-out infinite;
     background: #28643f;
     border-radius: 50%;
     height: 360px;
     opacity: .82;
     position: absolute;
     width: 360px;
+}
+
+@keyframes hero-circle-breathe {
+    0%,
+    100% {
+        opacity: .76;
+        transform: scale(.96) translate3d(-4px, 4px, 0);
+    }
+
+    50% {
+        opacity: .9;
+        transform: scale(1.04) translate3d(6px, -6px, 0);
+    }
 }
 
 .promo-hero__product-card {
@@ -426,6 +440,12 @@ textarea {
 
 .promo-hero__control--next {
     right: -24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .promo-hero__circle {
+        animation: none;
+    }
 }
 
 .store-showcase {
