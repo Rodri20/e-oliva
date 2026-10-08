@@ -11,6 +11,8 @@
 
     <x-store.category-shortcuts />
 
+    <x-store.special-collections />
+
     <section class="section home-strip" aria-label="Ventajas de compra">
         <div class="container home-strip-grid">
             <div>

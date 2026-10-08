@@ -66,4 +66,33 @@ return [
             ['name' => 'Ediciones', 'href' => '/tienda'],
         ],
     ],
+
+    'special_collections' => [
+        'title' => 'Colecciones y campanas especiales',
+        'view_all_label' => 'Ver todos',
+        'view_all_href' => '/tienda',
+        'items' => [
+            [
+                'eyebrow' => 'Coleccion estrella',
+                'title' => 'Lo esencial para tu cocina.',
+                'cta_label' => 'Explorar',
+                'href' => '/tienda',
+                'tone' => 'green',
+            ],
+            [
+                'eyebrow' => 'Packs especiales',
+                'title' => 'Combina y disfruta mas.',
+                'cta_label' => 'Explorar',
+                'href' => '/tienda',
+                'tone' => 'sand',
+            ],
+            [
+                'eyebrow' => 'Regalos con sabor',
+                'title' => 'Regala algo inolvidable.',
+                'cta_label' => 'Explorar',
+                'href' => '/tienda',
+                'tone' => 'blue',
+            ],
+        ],
+    ],
 ];

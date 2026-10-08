@@ -408,6 +408,10 @@ textarea {
     padding-top: 28px;
 }
 
+.store-showcase--special {
+    padding-top: 34px;
+}
+
 .store-showcase__header {
     align-items: start;
     display: flex;
@@ -560,6 +564,90 @@ textarea {
     font-size: 12px;
     font-weight: 800;
     line-height: 1.2;
+}
+
+.special-collections {
+    display: grid;
+    gap: 28px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.special-card {
+    align-items: center;
+    border-radius: 12px;
+    color: #071b10;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: minmax(0, 1fr) 124px;
+    min-height: 210px;
+    padding: 28px 20px 26px 28px;
+}
+
+.special-card--green {
+    background: #dcebd8;
+}
+
+.special-card--sand {
+    background: #eee8d8;
+}
+
+.special-card--blue {
+    background: #dcebea;
+}
+
+.special-card__copy {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.special-card__copy p {
+    color: #0f4b2d;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 26px;
+    text-transform: uppercase;
+}
+
+.special-card__copy h3 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.08;
+    margin: 0;
+    max-width: 220px;
+}
+
+.special-card__copy a {
+    align-items: center;
+    color: #0f4b2d;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 700;
+    gap: 7px;
+    margin-top: auto;
+}
+
+.special-card__media {
+    align-items: center;
+    align-self: stretch;
+    background: rgba(248, 252, 245, .72);
+    border-radius: 10px;
+    color: #0f4b2d;
+    display: grid;
+    justify-items: center;
+    min-height: 150px;
+    padding: 18px;
+    text-align: center;
+}
+
+.special-card__media span {
+    font-size: 24px;
+}
+
+.special-card__media small {
+    color: #607366;
+    font-size: 12px;
 }
 
 .page-hero {
@@ -1240,6 +1328,10 @@ footer {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
+    .special-collections {
+        grid-template-columns: 1fr;
+    }
+
     .section-heading,
     .home-hero-grid,
     .home-story-grid,
@@ -1338,6 +1430,20 @@ footer {
 
     .category-shortcuts {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .special-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 24px;
+    }
+
+    .special-card__copy {
+        min-height: 150px;
+    }
+
+    .special-card__media {
+        min-height: 132px;
     }
 
     .home-hero {
