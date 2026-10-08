@@ -388,20 +388,33 @@ textarea {
 
 .promo-hero__control {
     background: var(--white);
+    border: 0;
     border-radius: 50%;
     box-shadow: 0 14px 30px rgba(12, 43, 27, .16);
     color: #0f4b2d;
+    cursor: pointer;
     display: grid;
-    font-size: 38px;
-    font-weight: 900;
     height: 58px;
-    line-height: 1;
     place-items: center;
     position: absolute;
     top: 50%;
+    transition: background-color .18s ease, color .18s ease, transform .18s ease;
     transform: translateY(-50%);
     width: 58px;
     z-index: 2;
+}
+
+.promo-hero__control:hover {
+    background: #f4f8f2;
+    color: var(--olive-mid);
+}
+
+.promo-hero__control-icon {
+    color: currentColor;
+}
+
+.promo-hero__control-icon--next {
+    transform: scaleX(-1);
 }
 
 .promo-hero__control--prev {

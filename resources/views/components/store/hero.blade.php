@@ -3,7 +3,9 @@
 ])
 
 <section class="promo-hero" id="promociones" aria-labelledby="promo-hero-title">
-    <div class="promo-hero__control promo-hero__control--prev" aria-hidden="true">&lsaquo;</div>
+    <button class="promo-hero__control promo-hero__control--prev" type="button" aria-label="Promocion anterior">
+        <x-icons.left-arrow class="promo-hero__control-icon" :size="24" />
+    </button>
 
     <div class="promo-hero__content">
         <p class="promo-hero__eyebrow">{{ $hero['eyebrow'] }}</p>
@@ -32,5 +34,7 @@
         </div>
     </div>
 
-    <div class="promo-hero__control promo-hero__control--next" aria-hidden="true">&rsaquo;</div>
+    <button class="promo-hero__control promo-hero__control--next" type="button" aria-label="Promocion siguiente">
+        <x-icons.left-arrow class="promo-hero__control-icon promo-hero__control-icon--next" :size="24" />
+    </button>
 </section>
