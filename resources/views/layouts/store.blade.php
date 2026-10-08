@@ -181,7 +181,7 @@
             <div class="collapse navbar-collapse" id="store-navigation">
                 <nav class="nav-links navbar-nav ms-lg-auto" aria-label="Navegacion principal">
                     <a class="nav-link" href="{{ route('products.index') }}">Tienda</a>
-                    <a class="nav-link" href="{{ route('home') }}#categorias">Categorias</a>
+                    <a class="nav-link" href="{{ route('home') }}#colecciones">Colecciones</a>
                     <a class="nav-link" href="{{ route('home') }}#beneficios">Beneficios</a>
                     <a class="nav-link" href="{{ route('cart') }}">Carrito</a>
                 </nav>
