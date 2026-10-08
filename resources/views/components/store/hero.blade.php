@@ -28,10 +28,9 @@
 
     <div class="promo-hero__visual" aria-label="{{ $hero['media_label'] }}">
         <div class="promo-hero__circle"></div>
-        <figure class="promo-hero__product-card">
+        <div class="promo-hero__product-card">
             <img src="{{ asset($hero['media_src']) }}" alt="{{ $hero['media_alt'] }}" loading="eager">
-            <figcaption>{{ $hero['media_label'] }}</figcaption>
-        </figure>
+        </div>
     </div>
 
     <button class="promo-hero__control promo-hero__control--next" type="button" aria-label="Promocion siguiente">

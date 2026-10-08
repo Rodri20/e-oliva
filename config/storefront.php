@@ -34,7 +34,7 @@ return [
         'legal' => 'Los descuentos y precios se mostraran segun cada campana.',
         'media_label' => 'Producto o campana principal',
         'media_src' => 'images/storefront/olive-hero-bottle.png',
-        'media_alt' => 'Botella de aceite de oliva junto a ramas de olivo frente al mar',
+        'media_alt' => 'Botella premium de aceite de oliva con ramas y aceitunas',
     ],
 
     'offers' => [
