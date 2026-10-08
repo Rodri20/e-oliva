@@ -362,28 +362,31 @@ textarea {
 }
 
 .promo-hero__product-card {
-    align-items: center;
-    background: #eef5ed;
     border: 2px solid #0c2b1b;
     border-radius: 9px;
-    color: #345040;
-    display: grid;
     height: 315px;
-    justify-items: center;
-    padding: 24px;
+    margin: 0;
+    overflow: hidden;
     position: relative;
-    text-align: center;
     width: min(310px, 100%);
 }
 
-.promo-hero__product-card span {
-    color: #0f4b2d;
-    font-size: 30px;
+.promo-hero__product-card img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% center;
+    width: 100%;
 }
 
-.promo-hero__product-card small {
-    color: #5a6e5f;
-    margin-top: 8px;
+.promo-hero__product-card figcaption {
+    background: linear-gradient(180deg, transparent, rgba(8, 28, 17, .72));
+    bottom: 0;
+    color: rgba(255, 255, 255, .88);
+    font-size: 11px;
+    inset-inline: 0;
+    margin: 0;
+    padding: 44px 16px 14px;
+    position: absolute;
 }
 
 .promo-hero__control {
