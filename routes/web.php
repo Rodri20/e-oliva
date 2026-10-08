@@ -80,3 +80,15 @@ Route::get('/tienda/{slug}', function (string $slug) use ($products) {
 Route::get('/carrito', fn () => view('store.cart', [
     'products' => array_slice($products, 0, 2),
 ]))->name('cart');
+
+Route::post('/contacto', function () {
+    request()->validate([
+        'name' => ['required', 'string', 'max:120'],
+        'email' => ['required', 'email', 'max:160'],
+        'interest' => ['required', 'in:catalogo,regalos,mayorista'],
+        'phone' => ['nullable', 'string', 'max:40'],
+        'message' => ['nullable', 'string', 'max:1000'],
+    ]);
+
+    return back()->with('contact_status', 'Gracias. Registramos tu solicitud y pronto podremos conectarla al flujo comercial.');
+})->name('contact.store');

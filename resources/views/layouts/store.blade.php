@@ -6,6 +6,7 @@
     <title>@yield('title', config('app.name', 'Oliva'))</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         :root {
             --ink: #1d2520;
@@ -143,7 +144,7 @@
         .footer-inner { align-items: center; display: flex; justify-content: space-between; }
 
         @media (max-width: 920px) {
-            .nav-links { display: none; }
+            .nav-links { align-items: flex-start; padding: 16px 0 0; }
             .hero, .hero-content { min-height: 560px; }
             .category-grid, .product-grid, .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
             .catalog-layout, .product-detail, .cart-layout { grid-template-columns: 1fr; }
@@ -168,21 +169,26 @@
 <body>
     <div class="topbar">Envio gratis desde S/ 150 en Lima Metropolitana</div>
 
-    <header class="navbar">
+    <header class="navbar navbar-expand-lg">
         <div class="container nav-inner">
-            <a class="brand" href="{{ route('home') }}">
+            <a class="brand navbar-brand" href="{{ route('home') }}">
                 <span class="brand-mark">O</span>
                 Oliva
             </a>
-            <nav class="nav-links" aria-label="Navegacion principal">
-                <a href="{{ route('products.index') }}">Tienda</a>
-                <a href="{{ route('home') }}#categorias">Categorias</a>
-                <a href="{{ route('home') }}#beneficios">Beneficios</a>
-                <a href="{{ route('cart') }}">Carrito</a>
-            </nav>
-            <div class="nav-actions">
-                <a class="button secondary" href="{{ route('products.index') }}">Ver tienda</a>
-                <a class="icon-button" href="{{ route('cart') }}" aria-label="Carrito">+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#store-navigation" aria-controls="store-navigation" aria-expanded="false" aria-label="Abrir navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="store-navigation">
+                <nav class="nav-links navbar-nav ms-lg-auto" aria-label="Navegacion principal">
+                    <a class="nav-link" href="{{ route('products.index') }}">Tienda</a>
+                    <a class="nav-link" href="{{ route('home') }}#categorias">Categorias</a>
+                    <a class="nav-link" href="{{ route('home') }}#beneficios">Beneficios</a>
+                    <a class="nav-link" href="{{ route('cart') }}">Carrito</a>
+                </nav>
+                <div class="nav-actions ms-lg-4 mt-3 mt-lg-0">
+                    <a class="button secondary" href="{{ route('products.index') }}">Ver tienda</a>
+                    <a class="icon-button" href="{{ route('cart') }}" aria-label="Carrito">+</a>
+                </div>
             </div>
         </div>
     </header>
